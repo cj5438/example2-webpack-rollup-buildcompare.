@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
+    "start": "babel-node src/index.js",
     "webpack:debug": "node --inspect-brk ./node_modules/.bin/webpack --inline --progress",
     "build": "cross-env NODE_ENV=prod webpack --config config/webpack.config.prod.js",
     "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/index.js",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "tsx": "tsx src/index.js",
+    "tsx:watch": "tsx src/index.js --watch"
   },
   "keywords": [],
   "author": "brian@toimc.com",
