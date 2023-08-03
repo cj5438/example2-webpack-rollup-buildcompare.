@@ -1,6 +1,7 @@
 {
   "name": "8-9",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +11,8 @@
     "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/index.js",
     "clean": "rimraf dist",
     "tsx": "tsx src/index.js",
-    "tsx:watch": "tsx src/index.js --watch"
+    "tsx:watch": "tsx src/index.js --watch",
+    "rollup:build": "rollup -c"
   },
   "keywords": [],
   "author": "brian@toimc.com",
@@ -31,11 +33,13 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@rollup/plugin-terser": "^0.4.3",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "nodemon": "^3.0.1",
     "rimraf": "^5.0.1",
+    "rollup": "^3.27.1",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",

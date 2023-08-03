@@ -43,6 +43,10 @@ const webpackconfig = {
     __filename: true,
     __dirname: true,
   },
+  cache: {
+    type: 'filesystem',
+    allowCollectingMemory: true,
+  },
 };
 
 // console.log(webpackconfig)
